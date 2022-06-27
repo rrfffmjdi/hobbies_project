@@ -1,0 +1,38 @@
+<html>
+    <head><title> MY HOBBY</title></head>
+    <body>
+        <h4> MY HOBBIES</h4>
+        <span>
+            <input id="get_hobby" placeholder="typehere" type="text">
+
+<button id="get_hobby2_0" 
+onclick="array_hobbies()">CLICK HERE</button>
+        </span>
+
+<p id="its_me_ptag">
+display here
+</p>
+<script> 
+ 
+/* var hobby = "" ;
+function display () {
+    var gotitem = document.getElementById("get_hobby").value;
+ console.log(gotitem)  ;
+ hobby = hobby + gotitem + " " ;
+ document.getElementById("get_hobby").value=" " ;
+ document.getElementById("its_me_ptag").innerHTML= hobby;
+} */
+var array_hobby = [];
+function array_hobbies () {
+    var input = document.getElementById("get_hobby").value;
+    console.log(input);
+    array_hobby.push(input);
+    document.getElementById("its_me_ptag").innerHTML=array_hobby;
+    console.log(array_hobby);
+}
+
+</script>
+   
+
+    </body>
+</html>
